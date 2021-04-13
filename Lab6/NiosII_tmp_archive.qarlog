@@ -1,0 +1,97 @@
+Quartus Prime Archive log --	C:/Users/mengy/Documents/ECE385_lab6/NiosII_tmp_archive.qarlog
+
+Archive:	C:/Users/mengy/Documents/ECE385_lab6/NiosII_tmp_archive.qar
+Date:		Mon Mar 29 10:53:22 2021
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/mengy/Documents/ECE385_lab6/Color_Mapper.sv
+C:/Users/mengy/Documents/ECE385_lab6/HexDriver.sv
+C:/Users/mengy/Documents/ECE385_lab6/NiosII.qpf
+C:/Users/mengy/Documents/ECE385_lab6/NiosII.qsf
+C:/Users/mengy/Documents/ECE385_lab6/NiosII.sdc
+C:/Users/mengy/Documents/ECE385_lab6/VGA_controller.sv
+C:/Users/mengy/Documents/ECE385_lab6/ball.sv
+C:/Users/mengy/Documents/ECE385_lab6/db/stp2_auto_stripped.stp
+C:/Users/mengy/Documents/ECE385_lab6/lab62.sv
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc.qsys
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc.sopcinfo
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/lab62_soc.cmp
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/lab62_soc.debuginfo
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/lab62_soc.qip
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/lab62_soc.regmap
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/lab62_soc.v
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/altera_avalon_sc_fifo.v
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/altera_avalon_st_clock_crosser.v
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.sdc
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/altera_avalon_st_pipeline_base.v
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/altera_avalon_st_pipeline_stage.sv
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/altera_default_burst_converter.sv
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/altera_incr_burst_converter.sv
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/altera_merlin_address_alignment.sv
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/altera_merlin_arbitrator.sv
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/altera_merlin_burst_adapter.sv
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/altera_merlin_burst_adapter_new.sv
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/altera_merlin_burst_adapter_uncmpr.sv
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/altera_merlin_master_agent.sv
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/altera_merlin_master_translator.sv
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/altera_merlin_slave_agent.sv
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/altera_merlin_slave_translator.sv
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/altera_merlin_width_adapter.sv
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/altera_reset_controller.sdc
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/altera_reset_controller.v
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/altera_reset_synchronizer.v
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/altera_std_synchronizer_nocut.v
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/altera_wrap_burst_converter.sv
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_hex_digits_pio.v
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_irq_mapper.sv
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_jtag_uart_0.v
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_key.v
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_keycode.v
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_leds_pio.v
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_mm_interconnect_0.v
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_mm_interconnect_0_avalon_st_adapter.v
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_mm_interconnect_0_avalon_st_adapter_005.v
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_mm_interconnect_0_avalon_st_adapter_005_error_adapter_0.sv
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_mm_interconnect_0_cmd_demux.sv
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_mm_interconnect_0_cmd_mux.sv
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_mm_interconnect_0_router.sv
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_mm_interconnect_0_router_002.sv
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_mm_interconnect_0_router_007.sv
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_mm_interconnect_0_rsp_demux.sv
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_mm_interconnect_0_rsp_mux.sv
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_nios2_gen2_0.v
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_nios2_gen2_0_cpu.sdc
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_nios2_gen2_0_cpu.v
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_nios2_gen2_0_cpu_debug_slave_sysclk.v
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_nios2_gen2_0_cpu_debug_slave_tck.v
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_nios2_gen2_0_cpu_debug_slave_wrapper.v
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_nios2_gen2_0_cpu_ociram_default_contents.mif
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_nios2_gen2_0_cpu_rf_ram_a.mif
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_nios2_gen2_0_cpu_rf_ram_b.mif
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_nios2_gen2_0_cpu_test_bench.v
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_onchip_memory2_0.hex
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_onchip_memory2_0.v
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_sdram.v
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_sdram_pll.v
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_spi_0.v
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_sysid_qsys_0.v
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_timer_0.v
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_usb_gpx.v
+C:/Users/mengy/Documents/ECE385_lab6/lab62_soc/synthesis/submodules/lab62_soc_usb_rst.v
+C:/Users/mengy/Documents/ECE385_lab6/stp2.stp
+c:/intelfpga_lite/18.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 80 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Mon Mar 29 10:53:24 2021
+Source archive file:	C:/Users/mengy/Documents/ECE385_lab6/NiosII_tmp_archive.qar
+Archive was extracted into	C:/Users/mengy/Documents/ECE385_lab7/
+		 - successfully.
