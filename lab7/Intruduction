@@ -1,0 +1,4 @@
+SOC With Advanced Encryption Standard in SystenVerilog
+This lab accomplished the ecrypt and decrypt function with two inputs, a 128-bit paintext and a 128-bit key. The encryption will encrypt the plaintext using 10 loops and each loop conains 4 main process: AddRoungKeys, SubBytesm, ShiftRows and MixColumns.
+The decryptor is similar to encryptor, except it is in the reverse order and decrypt the irregular message to the original plaintext.
+This lab also uses Avalon-MM interface to communicate between Quartus and Eclipse as well as a NIOS II processor.
