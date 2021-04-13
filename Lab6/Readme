@@ -1,0 +1,3 @@
+This is lab6 of ECE385
+System-on-Chip with NIOS II processor
+In this lab, we start to use NIOS II processor in assistance with FPGA board and other peripherals such as USB keyboard and monitor. The NIOS II is an IP-based central processing unit (CPU) that can be programmed using higher level languages. It can act as a communicator between the DE-10 Lite board and other devices with the designated IP address in order to generate input and output to the output devices, including FPGA board. 
