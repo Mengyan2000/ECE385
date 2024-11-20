@@ -1,0 +1,176 @@
+module engine
+(input Reset, frame_clk, VGA_VS,
+ input [2:0] statue[2:0],
+ input [9:0] drawX, drawY, planeX, planeY, 
+ input [9:0] barrierX, barrierY, bulletX_1, bulletY_1, bulletX_2, bulletY_2,
+ output [23:0] data
+);
+	logic [18:0] paddr, saddr, baddr1, baddr2;
+	logic [18:0] next_paddr;
+	logic [23:0] plane_draw, bullet_draw1, bullet_draw2, barrier_draw;
+	logic [17:0] xplane, yplane;
+	logic [17:0] xbullet1, ybullet1, xbullet2, ybullet2;
+	logic [17:0] xbarrier, ybarrier;
+	//assign data = draw;
+	//always_ff @ (posedge frame_clk)
+	//plane: 60*36 pixels
+	always_comb
+	begin
+		if(statue[2][0])
+		begin
+			if((drawX+30 >= planeX && drawX-30 < planeX) && (drawY+18 >= planeY && drawY-18 < planeY))
+			begin
+				if(drawX < planeX && drawY < planeY)
+				begin
+					xplane = 30 - (planeX - drawX);
+					yplane = (18 - (planeY - drawY)) * 60;
+				end
+				else if(drawX >= planeX && drawY < planeY)
+				begin
+					xplane = 30 + (drawX - planeX);
+					yplane = (18 - (planeY - drawY)) * 60;
+				end
+				else if(drawX < planeX && drawY >= planeY)
+				begin
+					yplane = (18 + (drawY-planeY))*60;
+					xplane = 30 - (planeX - drawX);
+				end
+				else
+					yplane = (18 + (drawY-planeY))*60;
+					xplane = 30 + (drawX - planeX);
+				data = plane_draw;
+			end
+			else
+			begin
+					xplane = 0;
+					yplane = 0;
+					data = 0;
+			end
+		end
+		if(statue[0][0])			//bullet1: width:36, height:21
+		begin
+			if((drawX+18 >= bulletX_1 && drawX-18 < bulletX_1) && (drawY+10 >= bulletY_1 && drawY-11 < bulletY_1))
+			begin
+				if(drawX < bulletX_1 && drawY < bulletY_1)
+				begin
+					xbullet1 = 18 - (bulletX_1 - drawX);
+					ybullet1 = (10 - (bulletY_1 - drawY)) * 36;
+				end
+				else if(drawX >= bulletX_1 && drawY < bulletY_1)
+				begin
+					xbullet1 = 18 + (drawX - bulletX_1);
+					ybullet1 = (10 - (bulletY_1 - drawY)) * 36;
+				end
+				else if(drawX < bulletX_1 && drawY >= bulletY_1)
+				begin
+					ybullet1 = (11 + (drawY-bulletY_1))*36;
+					xbullet1 = 18 - (bulletX_1 - drawX);
+				end
+				else
+					ybullet1 = (11 + (drawY-bulletY_1))*36;
+					xbullet1 = 18 + (drawX - bulletX_1);
+				data = bullet_draw1;
+			end
+			else
+			begin
+					xbullet1 = 0;
+					ybullet1 = 0;
+					data = 0;
+			end
+		end
+		if(statue[0][1])			//bullet1: width:36, height:21
+		begin
+			if((drawX+18 >= bulletX_2 && drawX-18 < bulletX_2) && (drawY+10 >= bulletY_2 && drawY-11 < bulletY_2))
+			begin
+				if(drawX < bulletX_2 && drawY < bulletY_2)
+				begin
+					xbullet2 = 18 - (bulletX_2 - drawX);
+					ybullet2 = (10 - (bulletY_2 - drawY)) * 36;
+				end
+				else if(drawX >= bulletX_2 && drawY < bulletY_2)
+				begin
+					xbullet2 = 18 + (drawX - bulletX_2);
+					ybullet2 = (10 - (bulletY_2 - drawY)) * 36;
+				end
+				else if(drawX < bulletX_2 && drawY >= bulletY_2)
+				begin
+					ybullet2 = (11 + (drawY-bulletY_2))*36;
+					xbullet2 = 18 - (bulletX_2 - drawX);
+				end
+				else
+					ybullet2 = (11 + (drawY-bulletY_2))*36;
+					xbullet2 = 18 + (drawX - bulletX_2);
+				data = bullet_draw2;
+			end
+			else
+			begin
+					xbullet2 = 0;
+					ybullet2 = 0;
+					data = 0;
+			end
+		end
+		if(statue[1][0])			//barrier: width:60, height:51
+		begin
+			if((drawX+30 >= barrierX && drawX-30 < barrierX) && (drawY+25 >= barrierY && drawY-26 < barrierY))
+			begin
+				if(drawX < barrierX && drawY < barrierY)
+				begin
+					xbarrier = 30 - (barrierX - drawX);
+					ybarrier = (25 - (barrierY - drawY)) * 60;
+				end
+				else if(drawX >= barrierX && drawY < barrierY)
+				begin
+					xbarrier = 30 + (drawX - barrierX);
+					ybarrier = (25 - (barrierY - drawY)) * 60;
+				end
+				else if(drawX < barrierX && drawY >= barrierY)
+				begin
+					xbarrier = (26 + (drawY-barrierY))*60;
+					ybarrier = 30 - (barrierX - drawX);
+				end
+				else
+					xbarrier = (26 + (drawY-barrierY))*60;
+					ybarrier = 30 + (drawX - barrierX);
+				data = barrier_draw;
+			end
+			else
+			begin
+					xbarrier = 0;
+					ybarrier = 0;
+					data = 0;
+			end
+		end
+		else
+		begin 
+					xplane = 0;
+					yplane = 0;
+					xbarrier = 0;
+					ybarrier = 0;
+					xbullet2 = 0;
+					ybullet2 = 0;
+					xbullet1 = 0;
+					ybullet1 = 0;
+					data = 0;
+		end			
+	end
+	
+	assign paddr = xplane+yplane;
+	assign baddr1 = xbullet1+xbullet1;
+	assign baddr2 = xbullet2+ybullet2;
+	assign saddr = xbarrier + ybarrier;
+	
+	frameRAM_P   p0(.read_address(paddr),
+							.Clk(frame_clk),
+							.data_Out(plane_draw)); 
+	frameRAM_b0  b0(.read_address(baddr1),
+						 .Clk(frame_clk),
+						 .data_Out(bullet_draw1));
+	frameRAM_b0  b1(.read_address(baddr2),
+						 .Clk(frame_clk),
+						 .data_Out(bullet_draw2));	
+						 
+	frameRAM_Barrier   s0( .read_address(saddr),
+								  .Clk(frame_clk),
+								  .data_Out(barrier_draw));
+		
+endmodule

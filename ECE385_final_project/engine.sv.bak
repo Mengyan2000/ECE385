@@ -1,0 +1,6 @@
+module engine
+(input Reset, frame_clk, VGA_VS,
+ input [9:0] drawX, drawY,
+ output [9:0]  BallX, BallY, BallS,
+ output [9:0]  BallX, BallY, BallS );
+ 

@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Fri May 07 21:25:15 2021
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : NiosII
+Top-level Entity Name : lab62
+Family : MAX 10
+Total logic elements : 13,377
+    Total combinational functions : 11,678
+    Dedicated logic registers : 3,802
+Total registers : 3802
+Total pins : 141
+Total virtual pins : 0
+Total memory bits : 834,592
+Embedded Multiplier 9-bit elements : 8
+Total PLLs : 1
+UFM blocks : 0
+ADC blocks : 0

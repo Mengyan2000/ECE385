@@ -1,0 +1,18 @@
+Fitter Status : Successful - Fri May 07 21:26:44 2021
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : NiosII
+Top-level Entity Name : lab62
+Family : MAX 10
+Device : 10M50DAF484C7G
+Timing Models : Final
+Total logic elements : 12,889 / 49,760 ( 26 % )
+    Total combinational functions : 11,700 / 49,760 ( 24 % )
+    Dedicated logic registers : 3,759 / 49,760 ( 8 % )
+Total registers : 3828
+Total pins : 141 / 360 ( 39 % )
+Total virtual pins : 0
+Total memory bits : 834,592 / 1,677,312 ( 50 % )
+Embedded Multiplier 9-bit elements : 8 / 288 ( 3 % )
+Total PLLs : 1 / 4 ( 25 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 2 ( 0 % )
